@@ -1,0 +1,32 @@
+1) create dynamic web project
+2) copy mvc jars
+3) web.xml for Dispatcher Servler
+4) RUn app.
+[/WEB-INF/webmvc-servlet.xml]
+	nameOfServlet-servlet.xml
+5) create package com.met.controller.
+	inside that create class HelloController
+	add hello method
+
+6) entry in webmvc-servlet.xml for view reslver
+
+7) create pages folder inside WEB-INF 
+	and addd welcome.jsp inside it.
+
+8) replace in HelloCOntroller
+
+	@RequestMapping(value = "reqParam", method =  RequestMethod.GET)
+	with
+	@GetMapping("reqParam")
+	
+	for this to work add
+  <mvc:annotation-driven />
+
+
+	
+
+
+
+
+
+
